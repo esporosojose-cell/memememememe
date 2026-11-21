@@ -1,14 +1,15 @@
-# fly.toml app configuration file generated for mercantil30creditos on 2026-11-21T19:16:45Z
+# fly.toml app configuration file generated for mercantilcreditos on 2026-04-09T05:45:59Z
 #
-# See https://docs.fly.io/reference/configuration for information about how to use this file.
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'mercantil30creditos'
 primary_region = 'ams'
 
 [build]
+
 [http_service]
-  internal_port = 8080
+  internal_port = 80
   force_https = true
   auto_stop_machines = 'stop'
   auto_start_machines = true
@@ -19,3 +20,4 @@ primary_region = 'ams'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
+  memory_mb = 256
